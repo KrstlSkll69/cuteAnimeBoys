@@ -1,5 +1,15 @@
-import { ApplicationCommandOptionType } from "../../api/Commands";
-import definePlugin from "../../utils/types";
+/*
+ * Vencord, a Discord client mod
+ * Copyright (c) 2024 Vendicated and contributors
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
+import "./style.css";
+
+import { ApplicationCommandOptionType } from "@api/Commands";
+import { Link } from "@components/Link";
+import definePlugin from "@utils/types";
+import { Forms } from "@webpack/common";
 
 function rand(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -10,7 +20,7 @@ async function fetchReddit(sub: string) {
     const resp = await res.json();
     try {
         const { children } = resp.data;
-        let r = rand(0, children.length-1);
+        const r = rand(0, children.length - 1);
         return children[r].data.url;
     } catch (err) {
         console.error(resp);
@@ -20,13 +30,21 @@ async function fetchReddit(sub: string) {
 }
 
 export default definePlugin({
-    name: "Cute-Anime-Boys",
-    authors: [{
-        name: "Shady Goat",
-        id: BigInt(376079696489742338),
-    }],
+    name: "CuteAnimeBoys",
+    authors: [
+        { name: "Shady Goat", id: 376079696489742338n, },
+        { name: "krystalskullofficial", id: 929208515883569182n },
+    ],
     description: "Add a command to send cute anime boys in the chat",
+    settingsAboutComponent: () => <>
+        <Forms.FormText className="vc-plugin-reddit-notice">
+            Enabling this plugin allows reddit.com & <Link className="vc-linkHref" href="https://www.reddit.com/r/help/comments/z4qwb8/what_is_ireddit/">i.redd.it</Link> too bypass Vencord's CSP Restrictions.
+        </Forms.FormText>
+    </>,
+
+
     dependencies: ["CommandsAPI"],
+
     commands: [{
         name: "anime-boys",
         description: "Send cute anime boys",
