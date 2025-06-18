@@ -35,10 +35,12 @@ export default definePlugin({
         { name: "Shady Goat", id: 376079696489742338n, },
         { name: "krystalskullofficial", id: 929208515883569182n },
     ],
-    description: "Add a command to send cute anime boys in the chat",
+    description: "Add a command to send cute anime boys in the chat.",
     settingsAboutComponent: () => <>
         <Forms.FormText className="vc-plugin-reddit-notice">
-            Enabling this plugin allows reddit.com & <Link className="vc-linkHref" href="https://www.reddit.com/r/help/comments/z4qwb8/what_is_ireddit/">i.redd.it</Link> too bypass Vencord's CSP Restrictions.
+            Enabling this plugin allows reddit.com &
+            <Link className="vc-linkHref" href="https://www.reddit.com/r/help/comments/z4qwb8/what_is_ireddit/"> i.redd.it </Link>
+            too bypass Vencord's CSP Restrictions.
         </Forms.FormText>
     </>,
 
