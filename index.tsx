@@ -55,7 +55,7 @@ export default definePlugin({
                 name: "cat",
                 description: "If set, this will send exclusively cute anime cat boys",
                 type: ApplicationCommandOptionType.BOOLEAN,
-                required: false,
+                required: true,
             },
         ],
 
