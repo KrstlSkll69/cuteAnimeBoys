@@ -40,7 +40,7 @@ export default definePlugin({
         <Forms.FormText className="vc-plugin-reddit-notice">
             Enabling this plugin allows reddit.com &
             <Link className="vc-linkHref" href="https://www.reddit.com/r/help/comments/z4qwb8/what_is_ireddit/"> i.redd.it </Link>
-            too bypass Vencord's CSP Restrictions.
+            to bypass Vencord's CSP Restrictions.
         </Forms.FormText>
     </>,
 
