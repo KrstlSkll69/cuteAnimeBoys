@@ -1,9 +1,8 @@
 # Cute Anime Boys (Vencord)
 
-A Vencord plugin to do `/anime-boys ?cat:bool`, and send a random cute anime boy from reddit.
+A Vencord plugin to do `/anime-boys ?cat:bool`, and send a random cute anime boy from reddit. </br>
 
-![](https://cdn.nest.rip/uploads/e42fcccb-f414-406c-a02e-b59c466550ee.png) </br>
-![](https://cdn.nest.rip/uploads/d4e37737-a6e3-4e6c-9776-b48dd070a203.png) </br>
+![](https://cdn.nest.rip/uploads/5f598650-f8d2-4365-8c83-d0d6a69b0f5c.png) </br>
 
 ## DOWNLOAD INSTRUCTIONS
 You can either __git clone__ the repository OR __manually install__ it by downloading it as a zip file.<br/>
