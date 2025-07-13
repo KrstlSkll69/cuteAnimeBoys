@@ -44,7 +44,6 @@ export default definePlugin({
         </Forms.FormText>
     </>,
 
-
     dependencies: ["CommandsAPI"],
 
     commands: [{
